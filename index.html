@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
 </head>
 <style>
     *{
@@ -106,7 +107,7 @@ transition: 0.5s;
     transition:1s;
     color: white;
 }
-nav .bi{
+nav .bi bi-list{
     display: none;
 }
 
@@ -130,7 +131,7 @@ nav .bi{
         transition: 1s;
 
     }
-    nav.bi{
+    nav.bi bi-list{
         display: block;
         color: white;
         font-size: 22px;
@@ -142,6 +143,242 @@ nav .bi{
       padding: 30px;
     } 
 } 
+
+
+.course{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+
+}
+h1{
+    font-size: 30px;
+     /* color: #06718b;  */
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.course-col{
+    flex-basis: 31%;
+    padding: 20px 12px;
+    border-radius: 10px;
+    background:#5af9d95c;
+    /* box-shadow: 0 15px 25px rgba(0,0,0,0.1); */
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+@media (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    /* background-position: center;
+    position: relative;
+    background-size: cover; */
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+    /* height: 100%;
+    object-fit: cover; */
+    /* transition: 0.5s; */
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+     transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.392);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* facilities */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    /* background-position: center;
+    position: relative;
+    background-size: cover; */
+}
+.facilities-col{
+    flex-basis: 31%;
+    /* padding: 20px 12px; */
+    border-radius: 10px;
+    /* background: #fff3f3; */
+    /* box-shadow: 0 15px 25px rgba(0,0,0,0.1); */
+    /* box-sizing: border-box; */
+    margin-bottom: 5%;
+    text-align: left;
+    /* transition: 0.5s; */
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    /* display: block; */
+    /* height: 100%;
+    object-fit: cover; */
+    /* transition: 0.5s; */
+}
+
+.facilities-col p{
+    padding: 0;
+
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+/* testimonials */
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    /* background-position: center;
+    position: relative;
+    background-size: cover; */
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonials-col img{
+height: 40px;
+margin-left: 5px;
+margin-right: 30px;
+border-radius: 50%;
+}
+
+.testimonials-col p{
+    padding: 0;
+}
+testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* icons stars */
+
+/* .testimonials-col .fa{
+    color:aquamarine
+} */
+ @media (max-width: 700px){
+    .testimonials-col img{
+margin-left: 0px;
+margin-right: 15px;
+}
+    }
+/* 
+call to action */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./Untitled\ design\ \(28\).png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.cta h1{
+    color: white;
+    font-size: 40px;
+   padding: 0%;
+}
+@media (max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    /* background: #06718b; */
+    text-align: center;
+    padding: 30px 0;
+    /* color: white; */
+}
+.footer h4{
+    /* font-size: 20px;
+    color: #06718b; */
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
 </style>
 <body>
     
@@ -149,7 +386,7 @@ nav .bi{
 <nav>
     <a href="index.html"><img src="./Untitled_design__32_-removebg-preview.png" style="height: 100PX;width: 100px;"></a>
     <div class="nav-links" id="navLinks">
-        <i class="bi bi-x" onclick="hideMenu()"></i>
+        <i class="bi bi-x" onclick="hideMenu()" style="color: #fff;"></i>
         <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
 <ul>
     <li><a href="">HOME</a></li>
@@ -159,7 +396,7 @@ nav .bi{
         <li><a href="">CONTACT</a></li>
 </ul>
     </div>
-    <i class="bi bi-list" onclick="showMenu()"></i>
+    <i class="bi bi-list" onclick="showMenu()" style="color: #fff;"></i>
     <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
 </nav>
 
@@ -170,6 +407,152 @@ nav .bi{
     <a href="index.html" class="hero-btn">BOOK APPOINTMENT</a>
 
 </div>
+    </section>
+
+
+
+<!-- speciality -->
+
+<section class="course">
+    <h1>OUR MEDICAL SERVICES</h1>
+    <p>"Delivering professional, compassionate care across a wide range of specialties."</p>
+    
+    <div class="row">
+    <div class="course-col">
+        <h3>IVF</h3>
+        <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+    </div>
+    
+    <div class="course-col">
+        <h3>Miscarriage</h3>
+        <p>Recurrent Miscarriages (Recurrent Pregnancy losses) are devastating for women who are not able to carry the pregnancy to term.</p>
+    </div>
+    
+    <div class="course-col">
+        <h3>Male infertility treatment</h3>
+        <p>Azoospermia treatments aim at making men with no (zero – nil) sperm become a father. origins provides treatments like TESA.</p>
+    </div>
+    
+    </div>
+    </section>
+    
+    <!-- 3rd slide -->
+    
+    <section class="campus">
+    <h1>OUR HOSPITALS</h1>
+    <p>"Easily accessible care—find our hospitals near you."</p>
+    
+    <div class="row">
+
+    <div class="campus-col">
+        <img src="./Untitled design (32).png">
+        <div class="layer">
+            <h3>HYDERABAD</h3>
+        </div>
+    </div>
+    
+    <div class="campus-col">
+        <img src="./Untitled design (33).png">
+        <div class="layer">
+            <h3>warangal</h3>
+        </div>
+    </div>
+    
+    <div class="campus-col">
+        <img src="./Untitled design (34).png">
+        <div class="layer">
+            <h3>Khammam</h3>
+        </div>
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- FACILITIES -->
+    <section class="facilities">
+    <h1>Our facilities</h1>
+    <p>lorem ipsum dolor sit amet,consecteteur</p>
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="./Untitled design (38).png">
+            <h3>IVF</h3>
+            <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+        </div>
+    
+        <div class="facilities-col">
+            <img src="./Untitled design (39).png">
+            <h3>IVF</h3>
+            <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+        </div>
+    
+        <div class="facilities-col">
+            <img src="./Untitled design (40).png">
+            <h3>IVF</h3>
+            <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+        </div>
+    
+    </div>
+    </section>
+    
+    <!-- testimonials -->
+    
+    <section class="testimonials">
+        <h1>Our clients/patients says</h1>
+        <p>lorem ipsum dolor sit amet</p>
+    
+        <div class="row">
+       
+            <div class="testimonials-col">
+              <img src="./Untitled design (41).png">
+              <div>
+                <p>We gone under iui treatment, and glad to say that I got possivte...Hospital premises are very clean, staff are very polite and respectful towards patients. Thank u very much for.Dr.jhansi rani </p>
+                <h3>Ashok Lalitha</h3>
+                <!-- star rating -->
+                 <!-- star rating -->
+                  <!-- star rating -->
+                   <!-- star rating -->
+                    <!-- star rating -->
+    
+            </div>
+            </div>
+    
+            <div class="testimonials-col">
+                <img src="./Untitled design (42).png">
+                <div>
+                  <p>It's very happy to share my review about origins hospital. Realy very good treatment process is very good. Dr. Jhansi Rani mam is most experienced doctor. She is kind friendly towards patients. Happy to give this review.</p>
+                  <h3>Kodipaka Prasanna</h3>
+                  <!-- star rating -->
+                   <!-- star rating -->
+                    <!-- star rating -->
+                     <!-- star rating -->
+                      <!-- star rating -->
+              </div>
+            
+        </div>
+    
+
+    </section>
+    
+    <!-- call to action -->
+    
+    <section class="cta">
+        <h1>Enroll asdfhjklqwertuizxvbnm,.</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+    
+    <!-- footer -->
+    
+    <section class="footer">
+    <h4>About us</h4>
+    <p>lorem ipsum dolor sit amet,consecteteur</p>
+    <div>
+        <!-- fb icons -->
+         <!-- insta icons -->
+          <!-- youtube icons -->
+    </div>
+    <p>Made with FB by </p>
     </section>
 
     <!-- JAVA SCRIPT -->
