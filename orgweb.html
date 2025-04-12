@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>origins website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<style>
+    *{
+      margin: 0%;
+      padding: 0%;  
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .header{
+       min-height: 100vh;
+       width: 100%;
+       background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./Untitled\ design\ \(28\).png);
+       background-position: center;
+       position: relative;
+       background-size: cover;
+      
+    }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav img{
+    width: 150px;
+}
+.nav-links {
+     flex: 1;
+        text-align: right;
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px; 
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+.nav-links ul li a:hover {
+    color: #fb0a0a; /* or any color you like */
+}
+
+.nav-links ul li ::after{
+content:'';
+width:0%;
+height: 2px;
+background: #ff1100;
+display: block;
+margin: auto;
+transition: 0.5s;
+/* underline */
+position: absolute;
+bottom:0 ;
+left: 0;
+width: 0;
+height: 2px;
+background: #ff1100;
+transition: width 0.5s ease;
+}
+/* triggers the animation on hover */
+.nav-links ul li:hover ::after{
+    width: 100%;
+}
+/* text color change on hover */
+.nav-links ul li:hover a{
+    color: #ff1100; /* or any color you like */
+}
+
+
+
+
+.nav-links ul li :hover ::after{
+    width: 100%;
+}
+.nav-links ul li a:hover {
+    color: #ad1313; /* or any color you like */
+}
+
+.text-box{
+  width: 90%;
+  color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    /* margin-bottom: 10px; */
+}
+.text-box p{
+    font-size: 14px;
+    margin: 10px 0 40px;
+    color: aliceblue;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background:transparent;
+    padding: 12px 34px;
+    border-radius: 5px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+   border: 1px solid #f44336;
+    background: #f44336;
+    transition:1s;
+    color: white;
+}
+nav.fa{
+    display: none;
+}
+
+
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+       display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav.fa{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .nav-links ul{
+      padding: 30px;
+    }
+}
+</style>
+<body>
+    
+    <section class="header">
+<nav>
+    <a href="index.html"><img src="./Untitled_design__32_-removebg-preview.png" style="height: 100PX;width: 100px;"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+<ul>
+    <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">ABC</a></li>
+        <li><a href="">DEF</a></li>
+        <li><a href="">GHI</a></li>
+</ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<div class="text-box">
+
+    <h1>ORIGINS IVF</h1>
+    <p>At Origins Hospital, we are dedicated to helping individuals and couples achieve their <strong>dream of parenthood</strong> <br>through cutting-edge IVF treatments, compassionate care, and unwavering support.<br> Learn more about us..</p>
+    <a href="" class="hero-btn">BOOK APPOINTMENT</a>
+
+</div>
+    </section>
+
+    <!-- JAVA SCRIPT -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
