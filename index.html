@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,577 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
 </head>
+<style>
+    *{
+      margin: 0%;
+      padding: 0%;  
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .header{
+       min-height: 100vh;
+       width: 100%;
+       background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./Untitled\ design\ \(1\).jpg);
+       background-position: center;
+       position: relative;
+       background-size: cover;
+      
+    }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav img{
+    width: 150px;
+}
+.nav-links {
+     flex: 1;
+        text-align: right;
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px; 
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration: none;
+
+}
+.nav-links ul li ::after{
+content: '';
+width:0%;
+height: 2px;
+background:#03f1e9;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+} 
+
+.text-box{
+     width: 90%;
+     color: white;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+    }
+
+ .text-box h1{
+     font-size: 62px; 
+     margin-bottom: 10px; 
+ }
+.text-box p{
+    font-size: 14px;
+    margin: 10px 0 40px;
+    color: aliceblue;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background:transparent;
+    padding: 12px 34px;
+    border-radius: 5px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+} 
+ .hero-btn:hover{
+   border: 1px solid#06718b;
+    background:#06718b;
+    transition:1s;
+    color: white;
+}
+nav .bi bi-list{
+    display: none;
+}
+
+
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+       display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #06718b;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav.bi bi-list{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 10px;
+        size: 20px;
+    }
+    .nav-links ul{
+      padding: 30px;
+    } 
+} 
+
+
+.course{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+
+}
+h1{
+    font-size: 30px; -->
+     <!-- /* color: #06718b;  */ -->
+    <!-- font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.course-col{
+    flex-basis: 31%;
+    padding: 20px 12px;
+    border-radius: 10px;
+    background:#5af9d95c;
+    /* box-shadow: 0 15px 25px rgba(0,0,0,0.1); */
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+@media (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    /* background-position: center;
+    position: relative;
+    background-size: cover; */
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+    /* height: 100%;
+    object-fit: cover; */
+    /* transition: 0.5s; */
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+     transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.392);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+} -->
+<!-- 
+/* facilities */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    /* background-position: center;
+    position: relative;
+    background-size: cover; */
+}
+.facilities-col{
+    flex-basis: 31%;
+    /* padding: 20px 12px; */
+    border-radius: 10px;
+    /* background: #fff3f3; */
+    /* box-shadow: 0 15px 25px rgba(0,0,0,0.1); */
+    /* box-sizing: border-box; */
+    margin-bottom: 5%;
+    text-align: left;
+    /* transition: 0.5s; */
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    /* display: block; */
+    /* height: 100%;
+    object-fit: cover; */
+    /* transition: 0.5s; */
+}
+
+.facilities-col p{
+    padding: 0;
+
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+/* testimonials */
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    /* background-position: center;
+    position: relative;
+    background-size: cover; */
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonials-col img{
+height: 40px;
+margin-left: 5px;
+margin-right: 30px;
+border-radius: 50%;
+}
+
+.testimonials-col p{
+    padding: 0;
+}
+testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* icons stars */
+
+/* .testimonials-col .fa{
+    color:aquamarine
+} */
+ @media (max-width: 700px){
+    .testimonials-col img{
+margin-left: 0px;
+margin-right: 15px;
+}
+    }
+/* 
+call to action */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./Untitled\ design\ \(28\).png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.cta h1{
+    color: white;
+    font-size: 40px;
+   padding: 0%;
+}
+@media (max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    /* background: #06718b; */
+    text-align: center;
+    padding: 30px 0;
+    /* color: white; */
+}
+.footer h4{
+    /* font-size: 20px;
+    color: #06718b; */
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+} -->
+
+
+<!-- 
+</style>
+<body>
+    
+    <section class="header">
+<nav>
+    <a href="index.html"><img src="./Untitled_design__32_-removebg-preview.png" style="height: 100PX;width: 100px;"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="bi bi-x" onclick="hideMenu()" style="color: #fff;"></i> -->
+        <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+<!-- <ul>
+    <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">SERVICES</a></li>
+        <li><a href="">MATERNITY</a></li>
+        <li><a href="">CONTACT</a></li>
+</ul>
+    </div>
+    <i class="bi bi-list" onclick="showMenu()" style="color: #fff;"></i> -->
+    <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+<!-- </nav>
+
+<div class="text-box">
+
+    <h1>ORIGINS IVF</h1>
+    <p>Creating miracles embracing life<br><span style="color: #03f1e9;"><strong>YOUR JOURNEY TO PARENTHOOD STARTS HERE</strong></span><br>Discover the science and compassion behind ivf,guiding you on your path to parenthood.welcome to our world of hope</p>
+    <a href="index.html" class="hero-btn">BOOK APPOINTMENT</a>
+
+</div>
+    </section> -->
+
+
+
+<!-- speciality -->
+
+<!-- <section class="course">
+    <h1>OUR MEDICAL SERVICES</h1>
+    <p>"Delivering professional, compassionate care across a wide range of specialties."</p>
+    
+    <div class="row">
+    <div class="course-col">
+        <h3>IVF</h3>
+        <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+    </div>
+    
+    <div class="course-col">
+        <h3>Miscarriage</h3>
+        <p>Recurrent Miscarriages (Recurrent Pregnancy losses) are devastating for women who are not able to carry the pregnancy to term.</p>
+    </div>
+    
+    <div class="course-col">
+        <h3>Male infertility treatment</h3>
+        <p>Azoospermia treatments aim at making men with no (zero – nil) sperm become a father. origins provides treatments like TESA.</p>
+    </div>
+    
+    </div>
+    </section> -->
+    
+    <!-- 3rd slide -->
+    
+    <!-- <section class="campus">
+    <h1>OUR HOSPITALS</h1>
+    <p>"Easily accessible care—find our hospitals near you."</p>
+    
+    <div class="row">
+
+    <div class="campus-col">
+        <img src="./Untitled design (32).png">
+        <div class="layer">
+            <h3>HYDERABAD</h3>
+        </div>
+    </div>
+    
+    <div class="campus-col">
+        <img src="./Untitled design (33).png">
+        <div class="layer">
+            <h3>warangal</h3>
+        </div>
+    </div>
+    
+    <div class="campus-col">
+        <img src="./Untitled design (34).png">
+        <div class="layer">
+            <h3>Khammam</h3>
+        </div>
+    </div>
+    
+    </div>
+    
+    </section> -->
+    
+    <!-- FACILITIES -->
+    <!-- <section class="facilities">
+    <h1>Our facilities</h1>
+    <p>lorem ipsum dolor sit amet,consecteteur</p>
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="./Untitled design (38).png">
+            <h3>IVF</h3>
+            <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+        </div>
+    
+        <div class="facilities-col">
+            <img src="./Untitled design (39).png">
+            <h3>IVF</h3>
+            <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+        </div>
+    
+        <div class="facilities-col">
+            <img src="./Untitled design (40).png">
+            <h3>IVF</h3>
+            <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+        </div>
+    
+    </div>
+    </section> -->
+    
+    <!-- testimonials -->
+    
+    <!-- <section class="testimonials">
+        <h1>Our clients/patients says</h1>
+        <p>lorem ipsum dolor sit amet</p>
+    
+        <div class="row">
+       
+            <div class="testimonials-col">
+              <img src="./Untitled design (41).png">
+              <div>
+                <p>We gone under iui treatment, and glad to say that I got possivte...Hospital premises are very clean, staff are very polite and respectful towards patients. Thank u very much for.Dr.jhansi rani </p>
+                <h3>Ashok Lalitha</h3> -->
+                <!-- star rating -->
+                 <!-- star rating -->
+                  <!-- star rating -->
+                   <!-- star rating -->
+                    <!-- star rating -->
+    
+            <!-- </div>
+            </div>
+    
+            <div class="testimonials-col">
+                <img src="./Untitled design (42).png">
+                <div>
+                  <p>It's very happy to share my review about origins hospital. Realy very good treatment process is very good. Dr. Jhansi Rani mam is most experienced doctor. She is kind friendly towards patients. Happy to give this review.</p>
+                  <h3>Kodipaka Prasanna</h3>
+                  star rating -->
+                   <!-- star rating -->
+                    <!-- star rating -->
+                     <!-- star rating -->
+                      <!-- star rating
+              </div>
+            
+        </div>
+    
+
+    </section> -->
+    
+    <!-- call to action -->
+    
+    <!-- <section class="cta">
+        <h1>Enroll asdfhjklqwertuizxvbnm,.</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+     -->
+    <!-- footer -->
+    
+    <!-- <section class="footer">
+    <h4>About us</h4>
+    <p>lorem ipsum dolor sit amet,consecteteur</p>
+    <div> -->
+        <!-- fb icons -->
+         <!-- insta icons -->
+          <!-- youtube icons -->
+    <!-- </div>
+    <p>Made with FB by </p>
+    </section> -->
+
+    <!-- JAVA SCRIPT -->
+    <!-- <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>origins website</title>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+
 <style>
     *{
       margin: 0%;
@@ -377,9 +948,155 @@ call to action */
     font-weight: 600;
 }
 
+/* ABOUT US */
+#our-story{
+ background-color:#f5f7fb;
+    max-width: 1200px;
+    width: 90%;
+    margin: 80px auto;
+    border: 10px solid #06718b;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
 
+}
+.our-story-img{
+  width: 100%;
+  display: flex;
+}
+.our-story-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.story-play-btn{
+  position: absolute;
+  /* top: 0%; */
+  left: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transform: translate(-50%, -50%); */
+  background-color: #06718b;
+  color: white;
+  padding: 20px 10px;
+ border-radius: 4px 4px 10px 10px;
+ font-size: 0.6rem;
+ text-transform: uppercase;
+ font-weight: 500;
+  /* text-decoration: none;
+  font-size: 16px; */
+}
+.story-play-btn i{
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #06718b;
+ color: white;
+ margin: 10px;
+}
+.our-story-text{
+  padding: 50px;
+}
+.our-story-text h2{
+  font-size: 100px;
+  color: #06718b;
+  font-weight: 600;
+}
+.our-story-text p{
+   font-size: 0.9; 
+   color: #777;
+   margin: 10px 10px;
+   line-height: 1.4rem;
 
+}
+.story-number-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 10px;
+gap: 20px;
+margin-top: 20px;
+}
+.story-number-box{
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+background: #06718b;
+
+}
+.story-number-box strong{
+font-weight: 700;
+font-size: 1.8rem;
+color: rgb(6, 0, 0);}
+
+.story-number-box span{
+color: #837f7f;
+font-size: 0.9rem;
+}
+.s-n-box1{
+    background-color: #03f1e9;
+
+}
+.s-n-box2{
+    background-color: #03f1e9;
+    
+}
+.s-n-box3{
+    background-color: #03f1e9;
+    
+}
+.s-n-box4{
+    background-color: #03f1e9;
+    
+}
+/* what-we-provide */
+what-we-provide{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.w-info-box{
+    display: flex;
+    align-items: center;
+    /* padding: 20px;
+    background-color: #f5f7fb;
+    border-radius: 10px;
+    margin-bottom: 20px; */
+    justify-content: flex-start;
+
+}
+.w-info-icon{
+    width: 60px;
+    height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 15px;
+font-size: 1.4rem;
+background-color: #06718b;
+border-radius: 5px;
+}
+.w-info-text{
+    display: flex;
+    flex-direction: column;
+}
+.w-info-text strong{
+    font-size: 1.2rem;
+    color: #06718b;
+ letter-spacing: 0.31rem;
+    /* font-weight: 600; */
+}
 </style>
+</head>
 <body>
     
     <section class="header">
@@ -393,6 +1110,8 @@ call to action */
         <li><a href="">ABOUT</a></li>
         <li><a href="">SERVICES</a></li>
         <li><a href="">MATERNITY</a></li>
+        <li><a href="">RESOURCES</a></li>
+        <li><a href="">TESTIMONIALS</a></li>
         <li><a href="">CONTACT</a></li>
 </ul>
     </div>
@@ -408,34 +1127,117 @@ call to action */
 
 </div>
     </section>
+<!-- provide -->
+<section class="what-we-provide">
+    <!-- box1 -->
+    <div class="w-info-box">
+<!-- icon -->
+<div class="w-info-icon">
+    <i class="bi bi-briefcase-fill"></i>
+</div>
+<!-- text -->
+<div class="w-info-text">
+<strong>>6+ Years of Experience</strong>
+<p>...</p>
+
+</div>
+
+    </div>
+
+</section>
 
 
+<!-- about -->
+
+<section id="our-story">
+    <!-- img -->
+<div class="our-story-img"> 
+    <img src="./Untitled design (41).png" alt="">  
+    <!-- vid-play-btn -->
+     <a href="#" class="story-play-btn">
+        <i class="bi bi-play-circle-fill"></i>
+        Play video
+     </a>
+</div>
+<!-- text -->
+ <div class="our-story-img-text">
+<h2>short story about</h2>
+<p>At Origins Hospital, we are dedicated to helping individuals and 
+    couples achieve their dream of parenthood through cutting-edge IVF 
+    treatments, compassionate care,
+     and unwavering support. Learn more about us. </p>
+    <!-- happy-client-container -->
+     <div class="story-number-container">
+<!-- box -->
+ <div class="story-number-box s-n-box1">
+   <strong>5000+ </strong>
+   <span>CASES</span>
+ </div>
+
+<!-- box2 -->
+<div class="story-number-box s-n-box2">
+    <strong>2000 </strong>
+    <span>BIRTHS</span>
+  </div>
+
+<!-- box3 -->
+<div class="story-number-box s-n-box3">
+    <strong>10,000+ </strong>
+    <span>PROCEDURES</span>
+  </div>
+
+  <!-- box4 -->
+ <div class="story-number-box s-n-box4">
+    <strong>84% </strong>
+    <span>SUCCESS RATE</span>
+  </div>
+
+     </div>
+ </div>
+</section>
 
 <!-- speciality -->
 
 <section class="course">
-    <h1>OUR MEDICAL SERVICES</h1>
-    <p>"Delivering professional, compassionate care across a wide range of specialties."</p>
-    
+    <h1>courses we offer</h1>
+    <p>lorem ipsum dolor sit smet,khbdkhbcks</p>
+  
     <div class="row">
-    <div class="course-col">
+      <div class="course-col">
         <h3>IVF</h3>
         <p>IVF (In Vitro Fertilization) is a medical procedure that helps individuals and couples conceive by fertilizing an egg with sperm outside the body.</p>
+      </div>
+  
+      <div class="course-col">
+        <h3>IUI</h3>
+        <p>IUI (Intrauterine Insemination) is a fertility treatment that involves placing sperm directly into a woman's uterus to facilitate fertilization.</p>
+      </div>
+  
+      <div class="course-col">
+        <h3>ICSI</h3>
+        <p>ICSI (Intracytoplasmic Sperm Injection) is an advanced IVF procedure where a single sperm is injected directly into an egg to assist fertilization.</p>
+      </div>
     </div>
-    
-    <div class="course-col">
-        <h3>Miscarriage</h3>
-        <p>Recurrent Miscarriages (Recurrent Pregnancy losses) are devastating for women who are not able to carry the pregnancy to term.</p>
+  
+    <!-- New Row with 3 more course boxes -->
+    <div class="row">
+      <div class="course-col">
+        <h3>Fertility Counseling</h3>
+        <p>Provides emotional support and guidance for individuals and couples undergoing fertility treatments.</p>
+      </div>
+  
+      <div class="course-col">
+        <h3>Egg Freezing</h3>
+        <p>Egg freezing is a method to preserve a woman’s fertility by harvesting and storing her eggs for future use.</p>
+      </div>
+  
+      <div class="course-col">
+        <h3>Donor Programs</h3>
+        <p>Includes egg, sperm, or embryo donation services to help patients achieve pregnancy.</p>
+      </div>
     </div>
-    
-    <div class="course-col">
-        <h3>Male infertility treatment</h3>
-        <p>Azoospermia treatments aim at making men with no (zero – nil) sperm become a father. origins provides treatments like TESA.</p>
-    </div>
-    
-    </div>
-    </section>
-    
+  </section>
+  
     <!-- 3rd slide -->
     
     <section class="campus">
